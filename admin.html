@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <h1>Admin Panel - Pending Files</h1>
+    <div id="pendingFiles">
+        <p>Loading pending files...</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("📢 Admin Panel Loaded! Calling loadPendingFiles()...");
+            loadPendingFiles();
+        });
+    </script>
+</body>
+</html>
